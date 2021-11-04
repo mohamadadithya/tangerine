@@ -13,6 +13,7 @@ const getWord = async () => {
 
 findForm.addEventListener('submit', (e) => {
     e.preventDefault()
+    keywordInput.blur()
     if(keywordInput.value.length > 0) {
         getWord()
         invalidFeedback.innerText = ''
