@@ -1,0 +1,149 @@
+:root {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.header {
+  background-color: #f5f5f7;
+  padding: 16px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.header .logo {
+  font-size: 1.6rem;
+  font-family: "Source Serif Pro", serif;
+  color: black;
+  cursor: pointer;
+}
+
+section.main {
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+section.main .subtitle {
+  font-size: 1.8rem;
+}
+
+section.main .find-form .input-group {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 5px;
+  border: 2px solid grey;
+  border-radius: 8px;
+  padding: 8px 12px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.main .find-form .input-group .keyword {
+  width: 100%;
+}
+
+section.main .find-form .input-group .btn-find {
+  background-color: grey;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 5px 10px;
+  -webkit-transition: .5s all ease;
+  transition: .5s all ease;
+}
+
+section.main .find-form .input-group .btn-find:hover {
+  background-color: #646363;
+}
+
+section.main .find-form .invalid-feedback {
+  font-size: .85rem;
+  color: red;
+}
+
+section.main .footer {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+section.word {
+  padding-bottom: 20px;
+  padding-top: 85px;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: .8s all ease;
+  transition: .8s all ease;
+  overflow-y: auto;
+}
+
+section.word .back-link {
+  color: blue;
+  cursor: pointer;
+}
+
+section.word .speech-btn {
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+section.word .title {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+section.word .details {
+  margin-top: 20px;
+}
+
+section.word .details li {
+  margin-bottom: 12px;
+}
+
+section.word.open {
+  opacity: 1;
+  pointer-events: all;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.container {
+  margin: 0 35px;
+}
+
+.text-grey {
+  color: grey;
+}
+/*# sourceMappingURL=main.css.map */

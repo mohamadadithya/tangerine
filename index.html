@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tangerine</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,600;1,300&family=Source+Serif+Pro:wght@600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet"
+        type="text/css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a role="button" class="logo" onclick="backButton()">Tangerine</a>
+        </div>
+    </header>
+    <section class="main">
+        <div class="container">
+            <div>
+                <h3 class="subtitle">Find the meaning of the words</h3>
+                <p class="text-grey">If you are confused about a word and don't know who to ask, just type in the input
+                    below.</p>
+                <form class="find-form">
+                    <div class="input-group">
+                        <input type="text" class="keyword" placeholder="ex: Hello">
+                        <button type="submit" class="btn-find">Find</button>
+                    </div>
+                    <small class="invalid-feedback"></small>
+                </form>
+            </div>
+            <footer class="footer text-grey">&copy; 2021 by Mohamad Adithya</footer>
+        </div>
+    </section>
+    <section class="word"></section>
+    <audio class="speech-audio"></audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+    <script src="/assets/js/app.js"></script>
+</body>
+
+</html>

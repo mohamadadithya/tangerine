@@ -1,0 +1,146 @@
+$primaryFont: 'Poppins',
+sans-serif;
+$secondaryFont: 'Source Serif Pro',
+serif;
+
+:root {
+    font-size: 16px;
+    font-family: $primaryFont;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+    font-family: inherit;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+.header {
+    background-color: #f5f5f7;
+    padding: 16px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+
+    .logo {
+        font-size: 1.6rem;
+        font-family: $secondaryFont;
+        color: black;
+        cursor: pointer;
+    }
+}
+
+section.main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+
+    .subtitle {
+        font-size: 1.8rem;
+    }
+
+    .find-form {
+        .input-group {
+            margin-top: 12px;
+            margin-bottom: 5px;
+            width: 100%;
+            display: flex;
+            gap: 5px;
+            border: 2px solid grey;
+            border-radius: 8px;
+            padding: 8px 12px;
+            justify-content: space-between;
+
+            .keyword {
+                width: 100%;
+            }
+
+            .btn-find {
+                background-color: grey;
+                color: white;
+                border-radius: 3px;
+                cursor: pointer;
+                padding: 5px 10px;
+                transition: .5s all ease;
+
+                &:hover {
+                    background-color: #646363;
+                }
+            }
+        }
+
+        .invalid-feedback {
+            font-size: .85rem;
+            color: red;
+        }
+    }
+
+    .footer {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+}
+
+section.word {
+    padding-bottom: 20px;
+    padding-top: 85px;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+    transition: .8s all ease;
+    overflow-y: auto;
+
+    .back-link {
+        color: blue;
+        cursor: pointer;
+    }
+
+    .speech-btn {
+        cursor: pointer;
+        margin-right: 5px;
+    }
+
+    .title {
+        font-size: 2rem;
+        text-transform: capitalize;
+        margin-top: 15px;
+    }
+
+    .details {
+        margin-top: 20px;
+
+        li {
+            margin-bottom: 12px;
+        }
+    }
+
+    &.open {
+        opacity: 1;
+        pointer-events: all;
+        transform: translateX(0);
+    }
+}
+
+// Utility Classes
+.container {
+    margin: 0 35px;
+}
+
+.text-grey {
+    color: grey;
+}
